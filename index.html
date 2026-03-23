@@ -1,3 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LAZAROS - فروعنا</title>
+    
+    <style>
+        body { 
+            background: radial-gradient(circle at center, #2a0a0a 0%, #0a0c10 70%, #000000 100%); 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            direction: rtl; 
+            padding: 20px 10px; /* تقليل الحواف لتناسب الموبايل */
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .container { 
+            width: 100%; 
+            max-width: 480px; /* عرض مثالي لشاشات الموبايل */
+            text-align: center; 
+        }
+        
+        .brand-logo-img { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            margin: 10px auto 20px; 
+            display: block;
+            border: none; 
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.7); 
+        }
+
+        h1 { font-size: 1.8rem; letter-spacing: 1px; font-weight: 900; margin: 10px 0; }
+        p { color: #cccccc; font-size: 14px; margin-bottom: 25px; padding: 0 15px; }
+        
+        .section-title { 
+            text-align: right; 
+            font-weight: bold; 
+            font-size: 1.2rem; 
+            margin: 30px 10px 15px; 
+            color: #fff; 
+            border-right: 5px solid #ff0000; 
+            padding-right: 12px; 
+        }
+
+        .branch-card { 
+            position: relative; 
+            display: block; 
+            margin: 0 10px 15px; /* مسافات بين الخانات */
+            text-decoration: none; 
+            border-radius: 12px; 
+            background: transparent; 
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); 
+            transition: 0.3s ease; 
+        }
+
+        .card-content { 
+            position: relative; 
+            background: #0d1017; 
+            border-radius: 12px; 
+            padding: 20px 15px; /* زيادة المساحة الداخلية للضغط بسهولة بالإصبع */
+            text-align: right; 
+            font-size: 16px; /* تكبير الخط للقراءة الواضحة */
+            z-index: 1; 
+            color: #ffffff; 
+            border-right: 3px solid #ff0000;
+            line-height: 1.4;
+        }
+
+        .wholesale-card { 
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); 
+        }
+        .wholesale-card .card-content { 
+            background: #1f0808; 
+            font-weight: bold; 
+            border-right-color: #ffffff; 
+        }
+
+        /* تأثيرات اللمس للموبايل */
+        .branch-card:active { 
+            transform: scale(0.97); 
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.7); 
+        }
+    </style>
+</head>
+<body>
+
 <div class="container">
     <img src="https://i.postimg.cc/13xxd7hR/610093010-18435281743109186-2762700535293727266-n.jpg" 
          alt="LAZAROS Logo" class="brand-logo-img">
@@ -32,92 +124,11 @@
     <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : الفردوس مول - الطابق الارضي</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 المثنى : مول البركة - الطابق</div></a>
 
-    <div class="section-title wholesale-header">فروع مبيعات الجملة</div>
+    <div class="section-title wholesale-header" style="border-right-color: #ffffff; margin-top: 50px;">فروع مبيعات الجملة</div>
 
     <a href="#" class="branch-card wholesale-card"><div class="card-content">📦 بغداد (الكرخ) - شارع مطار المثنى</div></a>
     <a href="#" class="branch-card wholesale-card"><div class="card-content">📦 بغداد (الرصافة) - شارع الرشيد</div></a>
 </div>
 
-<style>
-    body { 
-        background: radial-gradient(circle at center, #2a0a0a 0%, #0a0c10 70%, #000000 100%); 
-        color: white; 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        display: flex; 
-        justify-content: center; 
-        direction: rtl; 
-        padding: 40px 15px;
-        margin: 0;
-        min-height: 100vh;
-    }
-
-    .container { width: 100%; max-width: 420px; text-align: center; }
-    
-    /* --- تعديل الشعار: حذف الإطار الصلب وإضافة ضوء خلفي --- */
-    .brand-logo-img { 
-        width: 150px; 
-        height: 150px; 
-        border-radius: 50%; 
-        object-fit: cover; 
-        margin: 0 auto 25px; 
-        display: block;
-        
-        /* حذف الإطار الصلب */
-        border: none; 
-        
-        /* ضوء نيون من ظهر الصورة (Backglow) */
-        box-shadow: 0 0 40px rgba(255, 0, 0, 0.8); 
-    }
-
-    h1 { font-size: 2.2rem; letter-spacing: 2px; font-weight: 900; margin: 10px 0; }
-    p { color: #cccccc; font-size: 14px; margin-bottom: 35px; }
-    
-    .section-title { text-align: right; font-weight: bold; font-size: 1.3rem; margin: 40px 5px 20px; color: #fff; border-right: 6px solid #ff0000; padding-right: 15px; }
-    .wholesale-header { margin-top: 80px; border-right-color: #ffffff; }
-
-    /* --- تعديل الخانات: نظام النيون الخلفي --- */
-    .branch-card { 
-        position: relative; 
-        display: block; 
-        margin-bottom: 25px; 
-        text-decoration: none; 
-        border-radius: 15px; 
-        background: transparent; 
-        
-        /* ضوء نيون من ظهر الخانة */
-        box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); 
-        transition: 0.4s ease; 
-    }
-
-    .card-content { 
-        position: relative; 
-        background: #0d1017; 
-        border-radius: 15px; 
-        padding: 18px; 
-        text-align: right; 
-        font-size: 15px; 
-        z-index: 1; 
-        color: #ffffff; 
-        
-        /* خط جانبي بسيط لتعزيز الشكل */
-        border-right: 2px solid #ff0000;
-    }
-
-    /* تمييز الجملة بضوء أقوى */
-    .wholesale-card { 
-        box-shadow: 0 0 25px rgba(255, 0, 0, 0.7); 
-    }
-    .wholesale-card .card-content { 
-        background: #1f0808; 
-        font-weight: bold; 
-        border-right-color: #ffffff; 
-    }
-
-    /* تأثير النيون عند التمرير (يتوهج الظهر أكثر) */
-    .branch-card:hover { 
-        transform: translateY(-4px); 
-        box-shadow: 0 0 30px rgba(255, 0, 0, 0.8); 
-    }
-    
-    .branch-card:active { transform: scale(0.96); }
-</style>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<div class="container">
+    <img src="https://i.postimg.cc/13xxd7hR/610093010-18435281743109186-2762700535293727266-n.jpg" 
+         alt="LAZAROS Logo" class="brand-logo-img">
+    
+    <h1>LAZAROS</h1>
+    <p>فروعنا في العراق - اختر الفرع للوصول عبر الخرائط</p>
+
+    <div class="section-title">فروعنا</div>
+
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : العراق مول - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : المنصور مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : دريم سيتي مول - الطابق الاول</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : الجادرية مول - الطابق السفلي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : القاهرة مول - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : العامرية مول - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الربيعي - مقابل جدار سنتر</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الرشيد - مجاور تمثال عبد الكريم</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الرشيد - مقابل مدخل المتنبي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الرواد - عمارة توربان</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 البصرة : تايمز سكوير - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 النجف : سيتي مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 النجف : الفرات مول - الطابق الاول</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الحلة : بي دي سي مول - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الحلة : حمورابي مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الفلوجة : فلوجة مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الرمادي : شارع المستودع - عمارة الكوخ</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الرمادي : شارع المستودع - مجاور كاجو</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : مجمع كربلاء التجاري - c35</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : بانوراما مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : شارع السناتر - مجاور توربان</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : الحارث مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : الفردوس مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 المثنى : مول البركة - الطابق</div></a>
+
+    <div class="section-title wholesale-header">فروع مبيعات الجملة</div>
+
+    <a href="#" class="branch-card wholesale-card"><div class="card-content">📦 بغداد (الكرخ) - شارع مطار المثنى</div></a>
+    <a href="#" class="branch-card wholesale-card"><div class="card-content">📦 بغداد (الرصافة) - شارع الرشيد</div></a>
+</div>
+
+<style>
+    body { 
+        background: radial-gradient(circle at center, #2a0a0a 0%, #0a0c10 70%, #000000 100%); 
+        color: white; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        display: flex; 
+        justify-content: center; 
+        direction: rtl; 
+        padding: 40px 15px;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    .container { width: 100%; max-width: 420px; text-align: center; }
+    
+    /* --- تعديل الشعار: حذف الإطار الصلب وإضافة ضوء خلفي --- */
+    .brand-logo-img { 
+        width: 150px; 
+        height: 150px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        margin: 0 auto 25px; 
+        display: block;
+        
+        /* حذف الإطار الصلب */
+        border: none; 
+        
+        /* ضوء نيون من ظهر الصورة (Backglow) */
+        box-shadow: 0 0 40px rgba(255, 0, 0, 0.8); 
+    }
+
+    h1 { font-size: 2.2rem; letter-spacing: 2px; font-weight: 900; margin: 10px 0; }
+    p { color: #cccccc; font-size: 14px; margin-bottom: 35px; }
+    
+    .section-title { text-align: right; font-weight: bold; font-size: 1.3rem; margin: 40px 5px 20px; color: #fff; border-right: 6px solid #ff0000; padding-right: 15px; }
+    .wholesale-header { margin-top: 80px; border-right-color: #ffffff; }
+
+    /* --- تعديل الخانات: نظام النيون الخلفي --- */
+    .branch-card { 
+        position: relative; 
+        display: block; 
+        margin-bottom: 25px; 
+        text-decoration: none; 
+        border-radius: 15px; 
+        background: transparent; 
+        
+        /* ضوء نيون من ظهر الخانة */
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); 
+        transition: 0.4s ease; 
+    }
+
+    .card-content { 
+        position: relative; 
+        background: #0d1017; 
+        border-radius: 15px; 
+        padding: 18px; 
+        text-align: right; 
+        font-size: 15px; 
+        z-index: 1; 
+        color: #ffffff; 
+        
+        /* خط جانبي بسيط لتعزيز الشكل */
+        border-right: 2px solid #ff0000;
+    }
+
+    /* تمييز الجملة بضوء أقوى */
+    .wholesale-card { 
+        box-shadow: 0 0 25px rgba(255, 0, 0, 0.7); 
+    }
+    .wholesale-card .card-content { 
+        background: #1f0808; 
+        font-weight: bold; 
+        border-right-color: #ffffff; 
+    }
+
+    /* تأثير النيون عند التمرير (يتوهج الظهر أكثر) */
+    .branch-card:hover { 
+        transform: translateY(-4px); 
+        box-shadow: 0 0 30px rgba(255, 0, 0, 0.8); 
+    }
+    
+    .branch-card:active { transform: scale(0.96); }
+</style>

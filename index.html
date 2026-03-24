@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -36,9 +35,29 @@
         }
 
         h1 { font-size: 1.8rem; letter-spacing: 1px; font-weight: 900; margin: 10px 0; }
-        p { color: #cccccc; font-size: 14px; margin-bottom: 10px; padding: 0 15px; }
+        p { color: #cccccc; font-size: 14px; margin-bottom: 5px; padding: 0 15px; }
 
-        /* ستايل أيقونات التواصل الاجتماعي بنفس تأثير الفروع */
+        /* خانة الواتساب - نيون وبدون خط جانبي */
+        .whatsapp-card {
+            display: inline-block;
+            margin: 10px auto 15px;
+            text-decoration: none;
+            background: #0a0202; 
+            padding: 10px 25px; 
+            border-radius: 12px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.35); 
+            border: none; /* تم حذف الخط الجانبي */
+            transition: 0.3s ease;
+        }
+
+        .whatsapp-card:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+        }
+
         .social-icons-container {
             display: flex;
             justify-content: center;
@@ -46,18 +65,19 @@
             margin: 15px auto 25px;
         }
 
+        /* أيقونات التواصل - نيون وبدون خط جانبي */
         .social-icon-only {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 50px; 
             height: 50px;
-            background: #0d1017; 
+            background: #0a0202; 
             border-radius: 12px; 
             transition: 0.3s ease;
             text-decoration: none;
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); 
-            border-right: 2px solid #ff0000; 
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.35); 
+            border: none; /* تم حذف الخط الجانبي */
         }
         
         .social-icon-only img {
@@ -68,7 +88,7 @@
 
         .social-icon-only:active {
             transform: scale(0.95); 
-            box-shadow: 0 0 25px rgba(255, 0, 0, 0.7); 
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
         }
         
         .section-title { 
@@ -101,7 +121,7 @@
             font-size: 16px; 
             z-index: 1; 
             color: #ffffff; 
-            border-right: 3px solid #ff0000;
+            border-right: 3px solid #ff0000; /* الخط الجانبي باقٍ للأفرع فقط */
             line-height: 1.4;
         }
 
@@ -127,8 +147,11 @@
          alt="LAZAROS Logo" class="brand-logo-img">
     
     <h1>LAZAROS</h1>
-    <p>فروعنا في العراق - اختر الفرع للوصول عبر الخرائط</p>
-    <p>للتواصل على الرقم 07825558001</p>
+    <p>فروعنا في العراق</p>
+    
+    <a href="https://wa.me/9647825558001" class="whatsapp-card">
+        💬 تواصل معنا : 07825558001
+    </a>
 
     <div class="social-icons-container">
         <a href="https://www.instagram.com/lazaros4jew/" class="social-icon-only">
@@ -145,18 +168,18 @@
     <div class="section-title">فروعنا</div>
 
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : العراق مول - الطابق الثاني</div></a>
-    <a href="https://maps.app.goo.gl/gR6UdpagTgxboyCe6" class="branch-card"><div class="card-content">📍 بغداد : المنصور مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : المنصور مول - الطابق الارضي</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : دريم سيتي مول - الطابق الاول</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : الجادرية مول - الطابق السفلي</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : القاهرة مول - الطابق الثاني</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : العامرية مول - الطابق الثاني</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الربيعي - مقابل جدار سنتر</div></a>
-    <a href="https://maps.app.goo.gl/LbXDPcN5oNGkyBpK8" class="branch-card"><div class="card-content">📍 بغداد : شارع الرشيد - مجاور تمثال عبد الكريم</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الرشيد - مجاور تمثال عبد الكريم</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الرشيد - مقابل مدخل المتنبي</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الرواد - عمارة توربان</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 البصرة : تايمز سكوير - الطابق الثاني</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 النجف : سيتي مول - الطابق الارضي</div></a>
-    <a href="https://maps.app.goo.gl/n8LoJ6z2Cz16oTbp8" class="branch-card"><div class="card-content">📍 النجف : الفرات مول - الطابق الاول</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 النجف : الفرات مول - الطابق الاول</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 الحلة : بي دي سي مول - الطابق الثاني</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 الحلة : حمورابي مول - الطابق الارضي</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 الفلوجة : فلوجة مول - الطابق الارضي</div></a>
@@ -171,7 +194,7 @@
 
     <div class="section-title wholesale-header" style="border-right-color: #ffffff; margin-top: 50px;">فروع مبيعات الجملة</div>
 
-    <a href="https://maps.app.goo.gl/9GgNx4JC6HFtSVFo7" class="branch-card wholesale-card"><div class="card-content">📦 بغداد (الكرخ) - شارع مطار المثنى</div></a>
+    <a href="#" class="branch-card wholesale-card"><div class="card-content">📦 بغداد (الكرخ) - شارع مطار المثنى</div></a>
     <a href="#" class="branch-card wholesale-card"><div class="card-content">📦 بغداد (الرصافة) - شارع الرشيد</div></a>
 </div>
 

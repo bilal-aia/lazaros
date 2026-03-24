@@ -1,10 +1,9 @@
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>LAZAROS - فروعنا</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
     
     <style>
         body { 
@@ -24,53 +23,34 @@
             max-width: 480px; 
             text-align: center; 
         }
-
-        /* --- تنسيق الشعار النصي البديل للصورة --- */
-        .logo-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end; 
-            margin: 40px auto 10px;
-            direction: ltr; 
+        
+        /* الشعار دائري كما طلبت */
+        .brand-logo-img { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; /* تنسيق دائري */
+            object-fit: cover; 
+            margin: 20px auto 20px; 
+            display: block;
+            border: 2px solid #ff0000; 
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.7); 
+            background-color: #fff;
         }
 
-        .logo-coded {
-            font-family: 'Playfair Display', serif;
-            line-height: 0.8; 
-            filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.6));
-        }
-
-        .char-l { 
-            color: #ff0000; 
-            font-style: italic; 
-            display: inline-block; 
-            transform: skewX(-12deg); 
-            font-size: 110px; 
-            margin-right: 5px; /* الإزاحة المطلوبة لعدم الالتصاق */
-        }
-
-        .rest-of-name { 
-            color: #ffffff; 
-            font-weight: 900; 
-            font-size: 60px; 
-            letter-spacing: -2px;
-        }
-        /* -------------------------------------- */
-
+        h1 { font-size: 1.8rem; letter-spacing: 1px; font-weight: 900; margin: 10px 0; }
         p { color: #cccccc; font-size: 14px; margin-bottom: 5px; padding: 0 15px; }
 
         .whatsapp-card {
             display: inline-block;
             margin: 10px auto 15px;
             text-decoration: none;
-            background: #0d1017; 
+            background: #0d1017;
             padding: 10px 25px; 
             border-radius: 12px;
             color: #ffffff;
             font-weight: bold;
             font-size: 16px;
             box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); 
-            border: none; 
             transition: 0.3s ease;
         }
 
@@ -86,18 +66,18 @@
             margin: 15px auto 25px;
         }
 
+        /* التطبيقات مربعة كما طلبت */
         .social-icon-only {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 50px; 
             height: 50px;
-            background: #0d1017; 
-            border-radius: 12px; 
+            background: #0d1017;
+            border-radius: 12px; /* تنسيق مربع بزويا منحنية */
             transition: 0.3s ease;
             text-decoration: none;
             box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); 
-            border: none; 
         }
         
         .social-icon-only img {
@@ -122,32 +102,25 @@
         }
 
         .branch-card { 
-            position: relative; 
             display: block; 
             margin: 0 10px 15px; 
             text-decoration: none; 
             border-radius: 12px; 
-            background: transparent; 
             box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); 
             transition: 0.3s ease; 
         }
 
         .card-content { 
-            position: relative; 
             background: #0d1017; 
             border-radius: 12px; 
             padding: 20px 15px; 
             text-align: right; 
             font-size: 16px; 
-            z-index: 1; 
             color: #ffffff; 
             border-right: 3px solid #ff0000;
             line-height: 1.4;
         }
 
-        .wholesale-card { 
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); 
-        }
         .wholesale-card .card-content { 
             background: #1f0808; 
             font-weight: bold; 
@@ -163,13 +136,9 @@
 <body>
 
 <div class="container">
+    <img src="https://iili.io/q6eC0XV.md.jpg" alt="LAZAROS Logo" class="brand-logo-img">
     
-    <div class="logo-wrapper">
-        <div class="logo-coded">
-            <span class="char-l">L</span><span class="rest-of-name">AZAROS</span>
-        </div>
-    </div>
-
+    <h1>LAZAROS</h1>
     <p>فروعنا في العراق</p>
     
     <a href="https://wa.me/9647825558001" class="whatsapp-card">
@@ -213,7 +182,7 @@
     <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : شارع السناتر - مجاور توربان</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : الحارث مول - الطابق الارضي</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : الفردوس مول - الطابق الارضي</div></a>
-    <a href="#" class="branch-card"><div class="card-content">📍 المثنى : مول البركة - الطابق</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 المثنى : مول البركة - الطابق الأول</div></a>
 
     <div class="section-title wholesale-header" style="border-right-color: #ffffff; margin-top: 50px;">فروع مبيعات الجملة</div>
 

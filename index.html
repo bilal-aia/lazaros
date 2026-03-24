@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>LAZAROS - فروعنا</title>
     
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    
     <style>
         body { 
             background: radial-gradient(circle at center, #2a0a0a 0%, #0a0c10 70%, #000000 100%); 
@@ -22,27 +24,46 @@
             max-width: 480px; 
             text-align: center; 
         }
-        
-        .brand-logo-img { 
-            width: 120px; 
-            height: 120px; 
-            border-radius: 50%; 
-            object-fit: cover; 
-            margin: 10px auto 20px; 
-            display: block;
-            border: none; 
-            box-shadow: 0 0 30px rgba(255, 0, 0, 0.7); 
+
+        /* --- تنسيق الشعار النصي البديل للصورة --- */
+        .logo-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; 
+            margin: 40px auto 10px;
+            direction: ltr; 
         }
 
-        h1 { font-size: 1.8rem; letter-spacing: 1px; font-weight: 900; margin: 10px 0; }
+        .logo-coded {
+            font-family: 'Playfair Display', serif;
+            line-height: 0.8; 
+            filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.6));
+        }
+
+        .char-l { 
+            color: #ff0000; 
+            font-style: italic; 
+            display: inline-block; 
+            transform: skewX(-12deg); 
+            font-size: 110px; 
+            margin-right: 5px; /* الإزاحة المطلوبة لعدم الالتصاق */
+        }
+
+        .rest-of-name { 
+            color: #ffffff; 
+            font-weight: 900; 
+            font-size: 60px; 
+            letter-spacing: -2px;
+        }
+        /* -------------------------------------- */
+
         p { color: #cccccc; font-size: 14px; margin-bottom: 5px; padding: 0 15px; }
 
-        /* خانة الواتساب - نفس لون خانات الفروع */
         .whatsapp-card {
             display: inline-block;
             margin: 10px auto 15px;
             text-decoration: none;
-            background: #0d1017; /* موحد مع الفروع */
+            background: #0d1017; 
             padding: 10px 25px; 
             border-radius: 12px;
             color: #ffffff;
@@ -65,14 +86,13 @@
             margin: 15px auto 25px;
         }
 
-        /* أيقونات التواصل - نفس لون خانات الفروع */
         .social-icon-only {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 50px; 
             height: 50px;
-            background: #0d1017; /* موحد مع الفروع */
+            background: #0d1017; 
             border-radius: 12px; 
             transition: 0.3s ease;
             text-decoration: none;
@@ -143,10 +163,13 @@
 <body>
 
 <div class="container">
-    <img src="https://i.postimg.cc/RVPbS2fk/photo-2026-03-24-13-40-47.jpg" 
-         alt="LAZAROS Logo" class="brand-logo-img">
     
-    <h1>LAZAROS</h1>
+    <div class="logo-wrapper">
+        <div class="logo-coded">
+            <span class="char-l">L</span><span class="rest-of-name">AZAROS</span>
+        </div>
+    </div>
+
     <p>فروعنا في العراق</p>
     
     <a href="https://wa.me/9647825558001" class="whatsapp-card">

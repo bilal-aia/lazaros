@@ -31,19 +31,20 @@
             text-align: center;
         }
 
+        /* تنسيق اللوجو كصورة عرض فقط */
         .brand-logo-img { 
             width: 300px; 
-            height: 100px;  
+            height: 90px;  
             object-fit: contain; 
             display: block;
             margin: 10px auto 5px auto;
+            pointer-events: none; /* يمنع الضغط على اللوجو */
         }
 
         .social-bar-top {
             display: flex;
             justify-content: center;
             gap: 30px;
-            /* تقليل المسافة السفلية هنا لرفع الخط */
             padding: 15px 0 10px 0; 
         }
         
@@ -51,9 +52,13 @@
             width: 42px; 
             height: 42px; 
             object-fit: contain; 
+            transition: transform 0.2s ease;
         }
 
-        /* الخط الفاصل */
+        .social-bar-top a:active img {
+            transform: scale(0.9); /* تأثير بسيط عند الضغط على أيقونات التواصل */
+        }
+
         .separator-line {
             width: 90%;
             height: 1px;
@@ -64,8 +69,10 @@
         .header-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            padding: 12px 0 25px 0; /* تقليل المسافة العلوية والسفلية للروابط */
+            align-items: center;
+            gap: 15px;
+            padding: 25px 0 25px 0;
+            width: 100%;
         }
 
         .header-link-item {
@@ -136,9 +143,7 @@
 
     <div class="container">
 
-        <a href="https://freeimage.host/i/qPUYB6J">
-            <img src="https://iili.io/qPUYB6J.png" alt="LAZAROS Logo" class="brand-logo-img">
-        </a>
+        <img src="https://iili.io/qPUYB6J.png" alt="LAZAROS Logo" class="brand-logo-img">
         
         <div class="social-bar-top">
             <a href="https://www.tiktok.com/@lazaros.4jew"><img src="https://iili.io/qPksIyl.png" alt="TikTok"></a>
